@@ -20,6 +20,7 @@ A modern, responsive website for **Delizia Restaurant** built with HTML, Tailwin
 
 1. **Clone or Download** this repository.
 2. Open `index.html` in your browser to view the site.
+
 3. All styling is handled by Tailwind CDN and optional custom CSS in `css/style.css`.
 4. To customize menu items, images, or text, edit `index.html`.
 5. The contact form uses a simple JavaScript alert for demonstration.
@@ -32,8 +33,6 @@ A modern, responsive website for **Delizia Restaurant** built with HTML, Tailwin
   ├── index.html         # Main website file (with multi-language support)
   ├── js/
   │   └── script.js      # JavaScript for carousel, contact form, FAQ accordion, and language switching
-  ├── css/
-  │   └── style.css      # (Optional) Custom CSS for additional styling
   └── README.md          # This file
 ```
 
