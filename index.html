@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delizia Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-red-700 text-white shadow">
+    <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-8 lg:px-16">
+      <div class="text-2xl font-bold tracking-wide mb-2 md:mb-0">Delizia</div>
+      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 font-semibold items-center">
+        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="#menu" class="hover:text-yellow-300 transition">Menu</a></li>
+        <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="py-12 md:py-20 lg:py-28 bg-gradient-to-br from-yellow-50 to-white text-center relative overflow-hidden group">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80"
+             alt="Restaurant background"
+             class="w-full h-full object-cover opacity-30 group-hover:opacity-60 transition-opacity duration-300" />
+      </div>
+      <div class="max-w-xl md:max-w-2xl mx-auto px-4 relative z-10">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-red-800">Welcome to Delizia</h1>
+        <p class="text-base sm:text-lg md:text-xl mb-8 text-gray-700">Authentic Italian cuisine, made with love and the freshest ingredients.</p>
+        <a href="#menu" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full shadow transition text-base sm:text-lg">View Menu</a>
+      </div>
+    </section>
+    <!-- Menu Section -->
+    <section id="menu" class="max-w-6xl mx-auto my-8 md:my-16 lg:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4 md:mb-6 text-center">Our Menu</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center relative overflow-hidden group">
+          <img src="https://simplyhomecooked.com/wp-content/uploads/2023/04/Margherita-Pizza-3.jpg"
+               alt="Margherita Pizza"
+               class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
+          <div class="relative z-10">
+            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">Margherita Pizza</h3>
+            <p class="text-gray-700 mb-2 text-sm md:text-base">Classic pizza with tomato, mozzarella, and basil.</p>
+            <span class="font-bold text-red-700 text-base md:text-lg">$12</span>
+          </div>
+        </div>
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center relative overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+               alt="Spaghetti Carbonara"
+               class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
+          <div class="relative z-10">
+            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">Spaghetti Carbonara</h3>
+            <p class="text-gray-700 mb-2 text-sm md:text-base">Pasta with pancetta, egg, and parmesan.</p>
+            <span class="font-bold text-red-700 text-base md:text-lg">$14</span>
+          </div>
+        </div>
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center relative overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80"
+               alt="Tiramisu"
+               class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
+          <div class="relative z-10">
+            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">Tiramisu</h3>
+            <p class="text-gray-700 mb-2 text-sm md:text-base">Traditional Italian coffee-flavored dessert.</p>
+            <span class="font-bold text-red-700 text-base md:text-lg">$7</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">About Us</h2>
+      <p class="text-gray-700 text-sm md:text-base">Delizia is a family-owned Italian restaurant in the heart of the city. Our chefs use recipes passed down through generations, ensuring every dish is full of authentic flavor and tradition. Join us for a cozy dining experience and discover the true taste of Italy!</p>
+    </section>
+    <!-- Partnership Logos Section -->
+    <section id="partners" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">Our Partners</h2>
+      <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/78/0f/12/pasta-house-logo.jpg" alt="Pasta House"
+             class="h-12 w-auto grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-150" />
+        <img src="https://png.pngtree.com/png-clipart/20230403/original/pngtree-bakery-logo-baker-illustration-png-image_9019460.png" alt="Bakery"
+             class="h-12 w-auto grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-150" />
+        <img src="https://t3.ftcdn.net/jpg/02/08/40/68/360_F_208406889_hodWRjw2cOX9pKCOR7TZWhgUXWGEbcJ8.jpg" alt="Pizza Place"
+             class="h-12 w-auto grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-150" />
+        <img src="https://i.pinimg.com/736x/e7/1b/dc/e71bdc3940f2bdfb7026cf17e475bc2f.jpg" alt="Chef's Table"
+             class="h-12 w-auto grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-150" />
+        <img src="https://t4.ftcdn.net/jpg/02/03/48/93/360_F_203489329_CFS0gvOhNmmYrnPnxQ1qUPo3kCHP3676.jpg" alt="Hot Dog Stand"
+             class="h-12 w-auto grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-150" />
+      </div>
+    </section>
+    <!-- Testimonial Carousel Section -->
+    <section id="testimonials" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">Testimonials</h2>
+      <div class="relative">
+        <div class="testimonial-carousel">
+          <div class="testimonial-item active text-center italic text-gray-800 bg-yellow-50 rounded-lg p-4 sm:p-6 mb-4 transition-opacity duration-300">
+            <p class="text-sm md:text-base">"The best Italian food I've ever tasted! Highly recommend Delizia." <br><span class="font-bold text-red-700">- Maria Rossi</span></p>
+          </div>
+          <div class="testimonial-item hidden text-center italic text-gray-800 bg-yellow-50 rounded-lg p-4 sm:p-6 mb-4 transition-opacity duration-300">
+            <p class="text-sm md:text-base">"A wonderful atmosphere and friendly staff. We felt like family." <br><span class="font-bold text-red-700">- John Smith</span></p>
+          </div>
+          <div class="testimonial-item hidden text-center italic text-gray-800 bg-yellow-50 rounded-lg p-4 sm:p-6 mb-4 transition-opacity duration-300">
+            <p class="text-sm md:text-base">"Authentic flavors and beautiful presentation. We'll be back!" <br><span class="font-bold text-red-700">- Laura Bianchi</span></p>
+          </div>
+          <button class="carousel-btn prev absolute left-0 top-1/2 -translate-y-1/2 bg-red-700 hover:bg-red-800 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow">&#10094;</button>
+          <button class="carousel-btn next absolute right-0 top-1/2 -translate-y-1/2 bg-red-700 hover:bg-red-800 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow">&#10095;</button>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">Contact</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" required class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
+        <input type="email" placeholder="Your Email" required class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
+        <textarea placeholder="Your Message" required class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base"></textarea>
+        <button type="submit" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 rounded shadow transition text-sm md:text-base">Send Message</button>
+      </form>
+    </section>
+    <!-- FAQ Section -->
+    <section id="faq" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-4" id="faq-list">
+        <div class="border-b pb-3">
+          <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
+            Do you offer vegetarian or vegan options?
+            <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
+            Yes! We have a variety of vegetarian and vegan dishes. Please ask our staff for recommendations or check our menu for the <span class="font-semibold">🌱</span> symbol.
+          </div>
+        </div>
+        <div class="border-b pb-3">
+          <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
+            Can I make a reservation?
+            <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
+            Absolutely! You can make a reservation by calling us or using the contact form above. Walk-ins are also welcome.
+          </div>
+        </div>
+        <div class="border-b pb-3">
+          <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
+            Do you offer delivery or takeout?
+            <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
+            Yes, we offer both delivery and takeout. You can order directly from our website or through popular delivery apps.
+          </div>
+        </div>
+        <div class="border-b pb-3">
+          <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
+            Are you family-friendly?
+            <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
+            Of course! We have a kids’ menu and high chairs available. Delizia is a great place for families.
+          </div>
+        </div>
+        <div>
+          <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
+            Do you cater for events?
+            <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
+            Yes, we provide catering for parties, corporate events, and special occasions. Please contact us for more details.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-red-700 text-white text-center py-4 mt-12 md:mt-20 rounded-t-lg">
+    <div class="flex justify-center space-x-6 mb-2">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="hover:text-yellow-300 transition">
+        <svg class="w-6 h-6 inline" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>
+      </a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="hover:text-yellow-300 transition">
+        <svg class="w-6 h-6 inline" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5 3.657 9.127 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.632.771-1.632 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.127 22 17 22 12"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="hover:text-yellow-300 transition">
+        <svg class="w-6 h-6 inline" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.268h-3v-4.604c0-1.098-.021-2.507-1.528-2.507-1.529 0-1.764 1.195-1.764 2.427v4.684h-3v-9h2.881v1.229h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.599v4.735z"/>
+        </svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="hover:text-yellow-300 transition">
+        <svg class="w-6 h-6 inline" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M23.498 6.186a2.993 2.993 0 0 0-2.107-2.117C19.163 3.5 12 3.5 12 3.5s-7.163 0-9.391.569A2.993 2.993 0 0 0 .502 6.186C0 8.413 0 12 0 12s0 3.587.502 5.814a2.993 2.993 0 0 0 2.107 2.117C4.837 20.5 12 20.5 12 20.5s7.163 0 9.391-.569a2.993 2.993 0 0 0 2.107-2.117C24 15.587 24 12 24 12s0-3.587-.502-5.814zM9.545 15.568V8.432l6.545 3.568-6.545 3.568z"/>
+        </svg>
+      </a>
+    </div>
+    <p class="text-xs sm:text-sm md:text-base">&copy; 2025 Delizia Restaurant. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
