@@ -14,22 +14,27 @@ A modern, responsive website for **Delizia Restaurant** built with HTML, Tailwin
 - **Contact Form:** Users can send a message (shows a thank you alert on submit).
 - **FAQ Section:** Click-to-expand answers for frequently asked questions.
 - **Footer:** Social media icons and copyright.
+- **Multi-language Support:** Switch between English, French, Swahili, and Italian using the language selector at the top right. All main content, menu, forms, and FAQ are translated.
 
 ## How to Use
 
 1. **Clone or Download** this repository.
 2. Open `index.html` in your browser to view the site.
-3. All styling is handled by Tailwind CDN—no build step required.
+3. All styling is handled by Tailwind CDN and optional custom CSS in `css/style.css`.
 4. To customize menu items, images, or text, edit `index.html`.
 5. The contact form uses a simple JavaScript alert for demonstration.
+6. **To change the language:** Use the dropdown at the top right of the page.
 
 ## File Structure
 
 ```
 /project
-  ├── index.html      # Main website file
-  ├── script.js       # JavaScript for carousel, contact form, and FAQ accordion
-  └── README.md       # This file
+  ├── index.html         # Main website file (with multi-language support)
+  ├── js/
+  │   └── script.js      # JavaScript for carousel, contact form, FAQ accordion, and language switching
+  ├── css/
+  │   └── style.css      # (Optional) Custom CSS for additional styling
+  └── README.md          # This file
 ```
 
 ## Deployment with GitHub Pages
@@ -49,9 +54,10 @@ You can easily deploy this site for free using [GitHub Pages](https://pages.gith
 
 - **Menu Items:** Change images, names, and prices in the Menu section.
 - **Partners:** Replace logo URLs with your own partners.
-- **Colors & Fonts:** Adjust Tailwind classes in the HTML for your branding.
+- **Colors & Fonts:** Adjust Tailwind classes in the HTML or add custom styles in `css/style.css`.
 - **Contact Form:** Integrate with a backend or service for real submissions.
 - **FAQ:** Edit questions and answers in the FAQ section.
+- **Translations:** Edit or add translations by updating the `<span data-lang="...">...</span>` elements in `index.html`.
 
 ## Credits
 
@@ -60,4 +66,4 @@ You can easily deploy this site for free using [GitHub Pages](https://pages.gith
 
 ---
 
-**Enjoy your new restaurant website!**
+**Enjoy your new multilingual restaurant website!**

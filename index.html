@@ -7,14 +7,44 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
+  <!-- Language Selector -->
+  <div class="flex justify-end p-4">
+    <select id="lang-switcher" class="border rounded px-2 py-1">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="sw">Kiswahili</option>
+      <option value="it">Italiano</option>
+    </select>
+  </div>
   <header class="bg-red-700 text-white shadow">
     <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-8 lg:px-16">
-      <div class="text-2xl font-bold tracking-wide mb-2 md:mb-0">Delizia</div>
+      <div class="text-2xl font-bold tracking-wide mb-2 md:mb-0">
+        <span data-lang="en">Delizia</span>
+        <span data-lang="fr" class="hidden">Delizia</span>
+        <span data-lang="sw" class="hidden">Delizia</span>
+        <span data-lang="it" class="hidden">Delizia</span>
+      </div>
       <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 font-semibold items-center">
-        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
-        <li><a href="#menu" class="hover:text-yellow-300 transition">Menu</a></li>
-        <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
-        <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+        <li><a href="#home" class="hover:text-yellow-300 transition" data-lang="en">Home</a>
+            <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="fr">Accueil</a>
+            <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="sw">Nyumbani</a>
+            <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="it">Home</a>
+        </li>
+        <li><a href="#menu" class="hover:text-yellow-300 transition" data-lang="en">Menu</a>
+            <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="fr">Menu</a>
+            <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="sw">Menyu</a>
+            <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="it">Menù</a>
+        </li>
+        <li><a href="#about" class="hover:text-yellow-300 transition" data-lang="en">About</a>
+            <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="fr">À propos</a>
+            <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="sw">Kuhusu</a>
+            <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="it">Chi siamo</a>
+        </li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition" data-lang="en">Contact</a>
+            <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="fr">Contact</a>
+            <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="sw">Mawasiliano</a>
+            <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="it">Contatti</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -27,22 +57,52 @@
              class="w-full h-full object-cover opacity-30 group-hover:opacity-60 transition-opacity duration-300" />
       </div>
       <div class="max-w-xl md:max-w-2xl mx-auto px-4 relative z-10">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-red-800">Welcome to Delizia</h1>
-        <p class="text-base sm:text-lg md:text-xl mb-8 text-gray-700">Authentic Italian cuisine, made with love and the freshest ingredients.</p>
-        <a href="#menu" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full shadow transition text-base sm:text-lg">View Menu</a>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-red-800">
+          <span data-lang="en">Welcome to Delizia</span>
+          <span data-lang="fr" class="hidden">Bienvenue chez Delizia</span>
+          <span data-lang="sw" class="hidden">Karibu Delizia</span>
+          <span data-lang="it" class="hidden">Benvenuti da Delizia</span>
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl mb-8 text-gray-700">
+          <span data-lang="en">Authentic Italian cuisine, made with love and the freshest ingredients.</span>
+          <span data-lang="fr" class="hidden">Cuisine italienne authentique, préparée avec amour et les ingrédients les plus frais.</span>
+          <span data-lang="sw" class="hidden">Chakula halisi cha Italia, kimeandaliwa kwa upendo na viungo safi kabisa.</span>
+          <span data-lang="it" class="hidden">Cucina italiana autentica, preparata con amore e ingredienti freschissimi.</span>
+        </p>
+        <a href="#menu" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full shadow transition text-base sm:text-lg">
+          <span data-lang="en">View Menu</span>
+          <span data-lang="fr" class="hidden">Voir le menu</span>
+          <span data-lang="sw" class="hidden">Angalia Menyu</span>
+          <span data-lang="it" class="hidden">Guarda il menù</span>
+        </a>
       </div>
     </section>
     <!-- Menu Section -->
     <section id="menu" class="max-w-6xl mx-auto my-8 md:my-16 lg:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4 md:mb-6 text-center">Our Menu</h2>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4 md:mb-6 text-center">
+        <span data-lang="en">Our Menu</span>
+        <span data-lang="fr" class="hidden">Notre Menu</span>
+        <span data-lang="sw" class="hidden">Menyu Yetu</span>
+        <span data-lang="it" class="hidden">Il Nostro Menù</span>
+      </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center relative overflow-hidden group">
           <img src="https://simplyhomecooked.com/wp-content/uploads/2023/04/Margherita-Pizza-3.jpg"
                alt="Margherita Pizza"
                class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
           <div class="relative z-10">
-            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">Margherita Pizza</h3>
-            <p class="text-gray-700 mb-2 text-sm md:text-base">Classic pizza with tomato, mozzarella, and basil.</p>
+            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+              <span data-lang="en">Margherita Pizza</span>
+              <span data-lang="fr" class="hidden">Pizza Margherita</span>
+              <span data-lang="sw" class="hidden">Pizza Margherita</span>
+              <span data-lang="it" class="hidden">Pizza Margherita</span>
+            </h3>
+            <p class="text-gray-700 mb-2 text-sm md:text-base">
+              <span data-lang="en">Classic pizza with tomato, mozzarella, and basil.</span>
+              <span data-lang="fr" class="hidden">Pizza classique avec tomate, mozzarella et basilic.</span>
+              <span data-lang="sw" class="hidden">Pizza ya asili yenye nyanya, mozzarella na basil.</span>
+              <span data-lang="it" class="hidden">Pizza classica con pomodoro, mozzarella e basilico.</span>
+            </p>
             <span class="font-bold text-red-700 text-base md:text-lg">$12</span>
           </div>
         </div>
@@ -51,8 +111,18 @@
                alt="Spaghetti Carbonara"
                class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
           <div class="relative z-10">
-            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">Spaghetti Carbonara</h3>
-            <p class="text-gray-700 mb-2 text-sm md:text-base">Pasta with pancetta, egg, and parmesan.</p>
+            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+              <span data-lang="en">Spaghetti Carbonara</span>
+              <span data-lang="fr" class="hidden">Spaghetti Carbonara</span>
+              <span data-lang="sw" class="hidden">Spaghetti Carbonara</span>
+              <span data-lang="it" class="hidden">Spaghetti alla Carbonara</span>
+            </h3>
+            <p class="text-gray-700 mb-2 text-sm md:text-base">
+              <span data-lang="en">Pasta with pancetta, egg, and parmesan.</span>
+              <span data-lang="fr" class="hidden">Pâtes avec pancetta, œuf et parmesan.</span>
+              <span data-lang="sw" class="hidden">Tambi na pancetta, mayai, na parmesan.</span>
+              <span data-lang="it" class="hidden">Pasta con pancetta, uovo e parmigiano.</span>
+            </p>
             <span class="font-bold text-red-700 text-base md:text-lg">$14</span>
           </div>
         </div>
@@ -61,8 +131,18 @@
                alt="Tiramisu"
                class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
           <div class="relative z-10">
-            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">Tiramisu</h3>
-            <p class="text-gray-700 mb-2 text-sm md:text-base">Traditional Italian coffee-flavored dessert.</p>
+            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+              <span data-lang="en">Tiramisu</span>
+              <span data-lang="fr" class="hidden">Tiramisu</span>
+              <span data-lang="sw" class="hidden">Tiramisu</span>
+              <span data-lang="it" class="hidden">Tiramisù</span>
+            </h3>
+            <p class="text-gray-700 mb-2 text-sm md:text-base">
+              <span data-lang="en">Traditional Italian coffee-flavored dessert.</span>
+              <span data-lang="fr" class="hidden">Dessert italien traditionnel au café.</span>
+              <span data-lang="sw" class="hidden">Kitindamlo cha jadi cha Italia chenye ladha ya kahawa.</span>
+              <span data-lang="it" class="hidden">Dessert tradizionale italiano al gusto di caffè.</span>
+            </p>
             <span class="font-bold text-red-700 text-base md:text-lg">$7</span>
           </div>
         </div>
@@ -70,12 +150,27 @@
     </section>
     <!-- About Section -->
     <section id="about" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">About Us</h2>
-      <p class="text-gray-700 text-sm md:text-base">Delizia is a family-owned Italian restaurant in the heart of the city. Our chefs use recipes passed down through generations, ensuring every dish is full of authentic flavor and tradition. Join us for a cozy dining experience and discover the true taste of Italy!</p>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
+        <span data-lang="en">About Us</span>
+        <span data-lang="fr" class="hidden">À propos de nous</span>
+        <span data-lang="sw" class="hidden">Kuhusu Sisi</span>
+        <span data-lang="it" class="hidden">Chi Siamo</span>
+      </h2>
+      <p class="text-gray-700 text-sm md:text-base">
+        <span data-lang="en">Delizia is a family-owned Italian restaurant in the heart of the city. Our chefs use recipes passed down through generations, ensuring every dish is full of authentic flavor and tradition. Join us for a cozy dining experience and discover the true taste of Italy!</span>
+        <span data-lang="fr" class="hidden">Delizia est un restaurant italien familial au cœur de la ville. Nos chefs utilisent des recettes transmises de génération en génération, garantissant des plats authentiques et traditionnels. Rejoignez-nous pour une expérience conviviale et découvrez la vraie saveur de l’Italie !</span>
+        <span data-lang="sw" class="hidden">Delizia ni mgahawa wa familia wa Kiitaliano katikati ya jiji. Mapishi yetu yanatokana na vizazi vilivyopita, yakihakikisha kila sahani ina ladha halisi na ya asili. Karibu ujionee ladha halisi ya Italia!</span>
+        <span data-lang="it" class="hidden">Delizia è un ristorante italiano a conduzione familiare nel cuore della città. I nostri chef utilizzano ricette tramandate da generazioni, garantendo piatti autentici e tradizionali. Unisciti a noi per un’esperienza accogliente e scopri il vero sapore dell’Italia!</span>
+      </p>
     </section>
     <!-- Partnership Logos Section -->
     <section id="partners" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">Our Partners</h2>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">
+        <span data-lang="en">Our Partners</span>
+        <span data-lang="fr" class="hidden">Nos partenaires</span>
+        <span data-lang="sw" class="hidden">Washirika Wetu</span>
+        <span data-lang="it" class="hidden">I Nostri Partner</span>
+      </h2>
       <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/78/0f/12/pasta-house-logo.jpg" alt="Pasta House"
              class="h-12 w-auto grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-150" />
@@ -91,17 +186,37 @@
     </section>
     <!-- Testimonial Carousel Section -->
     <section id="testimonials" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">Testimonials</h2>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">
+        <span data-lang="en">Testimonials</span>
+        <span data-lang="fr" class="hidden">Témoignages</span>
+        <span data-lang="sw" class="hidden">Ushuhuda</span>
+        <span data-lang="it" class="hidden">Testimonianze</span>
+      </h2>
       <div class="relative">
         <div class="testimonial-carousel">
           <div class="testimonial-item active text-center italic text-gray-800 bg-yellow-50 rounded-lg p-4 sm:p-6 mb-4 transition-opacity duration-300">
-            <p class="text-sm md:text-base">"The best Italian food I've ever tasted! Highly recommend Delizia." <br><span class="font-bold text-red-700">- Maria Rossi</span></p>
+            <p class="text-sm md:text-base">
+              <span data-lang="en">"The best Italian food I've ever tasted! Highly recommend Delizia." <br><span class="font-bold text-red-700">- Maria Rossi</span></span>
+              <span data-lang="fr" class="hidden">"La meilleure cuisine italienne que j'aie jamais goûtée ! Je recommande vivement Delizia." <br><span class="font-bold text-red-700">- Maria Rossi</span></span>
+              <span data-lang="sw" class="hidden">"Chakula bora kabisa cha Italia ambacho nimewahi kuonja! Napendekeza sana Delizia." <br><span class="font-bold text-red-700">- Maria Rossi</span></span>
+              <span data-lang="it" class="hidden">"Il miglior cibo italiano che abbia mai assaggiato! Consiglio vivamente Delizia." <br><span class="font-bold text-red-700">- Maria Rossi</span></span>
+            </p>
           </div>
           <div class="testimonial-item hidden text-center italic text-gray-800 bg-yellow-50 rounded-lg p-4 sm:p-6 mb-4 transition-opacity duration-300">
-            <p class="text-sm md:text-base">"A wonderful atmosphere and friendly staff. We felt like family." <br><span class="font-bold text-red-700">- John Smith</span></p>
+            <p class="text-sm md:text-base">
+              <span data-lang="en">"A wonderful atmosphere and friendly staff. We felt like family." <br><span class="font-bold text-red-700">- John Smith</span></span>
+              <span data-lang="fr" class="hidden">"Une ambiance merveilleuse et un personnel amical. Nous nous sommes sentis comme en famille." <br><span class="font-bold text-red-700">- John Smith</span></span>
+              <span data-lang="sw" class="hidden">"Mazingira mazuri na wafanyakazi wenye urafiki. Tulijisikia kama familia." <br><span class="font-bold text-red-700">- John Smith</span></span>
+              <span data-lang="it" class="hidden">"Atmosfera meravigliosa e personale cordiale. Ci siamo sentiti come in famiglia." <br><span class="font-bold text-red-700">- John Smith</span></span>
+            </p>
           </div>
           <div class="testimonial-item hidden text-center italic text-gray-800 bg-yellow-50 rounded-lg p-4 sm:p-6 mb-4 transition-opacity duration-300">
-            <p class="text-sm md:text-base">"Authentic flavors and beautiful presentation. We'll be back!" <br><span class="font-bold text-red-700">- Laura Bianchi</span></p>
+            <p class="text-sm md:text-base">
+              <span data-lang="en">"Authentic flavors and beautiful presentation. We'll be back!" <br><span class="font-bold text-red-700">- Laura Bianchi</span></span>
+              <span data-lang="fr" class="hidden">"Des saveurs authentiques et une belle présentation. Nous reviendrons !" <br><span class="font-bold text-red-700">- Laura Bianchi</span></span>
+              <span data-lang="sw" class="hidden">"Ladha halisi na uwasilishaji mzuri. Tutarejea tena!" <br><span class="font-bold text-red-700">- Laura Bianchi</span></span>
+              <span data-lang="it" class="hidden">"Sapori autentici e presentazione bellissima. Torneremo!" <br><span class="font-bold text-red-700">- Laura Bianchi</span></span>
+            </p>
           </div>
           <button class="carousel-btn prev absolute left-0 top-1/2 -translate-y-1/2 bg-red-700 hover:bg-red-800 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow">&#10094;</button>
           <button class="carousel-btn next absolute right-0 top-1/2 -translate-y-1/2 bg-red-700 hover:bg-red-800 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center shadow">&#10095;</button>
@@ -110,61 +225,127 @@
     </section>
     <!-- Contact Section -->
     <section id="contact" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">Contact</h2>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
+        <span data-lang="en">Contact</span>
+        <span data-lang="fr" class="hidden">Contact</span>
+        <span data-lang="sw" class="hidden">Mawasiliano</span>
+        <span data-lang="it" class="hidden">Contatti</span>
+      </h2>
       <form class="space-y-4">
-        <input type="text" placeholder="Your Name" required class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
-        <input type="email" placeholder="Your Email" required class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
-        <textarea placeholder="Your Message" required class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base"></textarea>
-        <button type="submit" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 rounded shadow transition text-sm md:text-base">Send Message</button>
+        <input type="text"
+          placeholder="Your Name"
+          data-placeholder-en="Your Name"
+          data-placeholder-fr="Votre nom"
+          data-placeholder-sw="Jina lako"
+          data-placeholder-it="Il tuo nome"
+          required
+          class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
+        <input type="email"
+          placeholder="Your Email"
+          data-placeholder-en="Your Email"
+          data-placeholder-fr="Votre e-mail"
+          data-placeholder-sw="Barua pepe yako"
+          data-placeholder-it="La tua email"
+          required
+          class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
+        <textarea
+          placeholder="Your Message"
+          data-placeholder-en="Your Message"
+          data-placeholder-fr="Votre message"
+          data-placeholder-sw="Ujumbe wako"
+          data-placeholder-it="Il tuo messaggio"
+          required
+          class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base"></textarea>
+        <button type="submit" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 rounded shadow transition text-sm md:text-base">
+          <span data-lang="en">Send Message</span>
+          <span data-lang="fr" class="hidden">Envoyer le message</span>
+          <span data-lang="sw" class="hidden">Tuma Ujumbe</span>
+          <span data-lang="it" class="hidden">Invia Messaggio</span>
+        </button>
       </form>
     </section>
     <!-- FAQ Section -->
     <section id="faq" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">Frequently Asked Questions</h2>
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">
+        <span data-lang="en">Frequently Asked Questions</span>
+        <span data-lang="fr" class="hidden">Questions fréquentes</span>
+        <span data-lang="sw" class="hidden">Maswali Yanayoulizwa Mara kwa Mara</span>
+        <span data-lang="it" class="hidden">Domande Frequenti</span>
+      </h2>
       <div class="space-y-4" id="faq-list">
         <div class="border-b pb-3">
           <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
-            Do you offer vegetarian or vegan options?
+            <span data-lang="en">Do you offer vegetarian or vegan options?</span>
+            <span data-lang="fr" class="hidden">Proposez-vous des options végétariennes ou véganes ?</span>
+            <span data-lang="sw" class="hidden">Je, mna vyakula vya mboga au vegan?</span>
+            <span data-lang="it" class="hidden">Offrite opzioni vegetariane o vegane?</span>
             <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
           </button>
           <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
-            Yes! We have a variety of vegetarian and vegan dishes. Please ask our staff for recommendations or check our menu for the <span class="font-semibold">🌱</span> symbol.
+            <span data-lang="en">Yes! We have a variety of vegetarian and vegan dishes. Please ask our staff for recommendations or check our menu for the <span class="font-semibold">🌱</span> symbol.</span>
+            <span data-lang="fr" class="hidden">Oui ! Nous proposons une variété de plats végétariens et véganes. Demandez conseil à notre équipe ou repérez le symbole <span class="font-semibold">🌱</span> sur notre menu.</span>
+            <span data-lang="sw" class="hidden">Ndiyo! Tunayo aina mbalimbali za vyakula vya mboga na vegan. Tafadhali uliza wafanyakazi wetu au angalia alama ya <span class="font-semibold">🌱</span> kwenye menyu yetu.</span>
+            <span data-lang="it" class="hidden">Sì! Abbiamo una varietà di piatti vegetariani e vegani. Chiedi al nostro staff o cerca il simbolo <span class="font-semibold">🌱</span> nel menù.</span>
           </div>
         </div>
         <div class="border-b pb-3">
           <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
-            Can I make a reservation?
+            <span data-lang="en">Can I make a reservation?</span>
+            <span data-lang="fr" class="hidden">Puis-je faire une réservation ?</span>
+            <span data-lang="sw" class="hidden">Naweza kuweka nafasi?</span>
+            <span data-lang="it" class="hidden">Posso prenotare un tavolo?</span>
             <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
           </button>
           <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
-            Absolutely! You can make a reservation by calling us or using the contact form above. Walk-ins are also welcome.
+            <span data-lang="en">Absolutely! You can make a reservation by calling us or using the contact form above. Walk-ins are also welcome.</span>
+            <span data-lang="fr" class="hidden">Absolument ! Vous pouvez réserver en nous appelant ou via le formulaire de contact ci-dessus. Les clients sans réservation sont également les bienvenus.</span>
+            <span data-lang="sw" class="hidden">Ndiyo kabisa! Unaweza kuweka nafasi kwa kutupigia simu au kutumia fomu ya mawasiliano hapo juu. Wateja wa ghafla pia wanakaribishwa.</span>
+            <span data-lang="it" class="hidden">Certamente! Puoi prenotare chiamandoci o usando il modulo di contatto qui sopra. Accettiamo anche clienti senza prenotazione.</span>
           </div>
         </div>
         <div class="border-b pb-3">
           <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
-            Do you offer delivery or takeout?
+            <span data-lang="en">Do you offer delivery or takeout?</span>
+            <span data-lang="fr" class="hidden">Proposez-vous la livraison ou à emporter ?</span>
+            <span data-lang="sw" class="hidden">Je, mnafanya huduma ya kufikisha au kuchukua chakula?</span>
+            <span data-lang="it" class="hidden">Fate consegna a domicilio o asporto?</span>
             <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
           </button>
           <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
-            Yes, we offer both delivery and takeout. You can order directly from our website or through popular delivery apps.
+            <span data-lang="en">Yes, we offer both delivery and takeout. You can order directly from our website or through popular delivery apps.</span>
+            <span data-lang="fr" class="hidden">Oui, nous proposons la livraison et à emporter. Commandez sur notre site ou via les applications de livraison.</span>
+            <span data-lang="sw" class="hidden">Ndiyo, tunatoa huduma ya kufikisha na kuchukua chakula. Unaweza kuagiza kupitia tovuti yetu au programu maarufu za utoaji chakula.</span>
+            <span data-lang="it" class="hidden">Sì, offriamo sia consegna a domicilio che asporto. Puoi ordinare dal nostro sito o tramite le app di consegna più popolari.</span>
           </div>
         </div>
         <div class="border-b pb-3">
           <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
-            Are you family-friendly?
+            <span data-lang="en">Are you family-friendly?</span>
+            <span data-lang="fr" class="hidden">Êtes-vous adapté aux familles ?</span>
+            <span data-lang="sw" class="hidden">Je, ni mahali pazuri kwa familia?</span>
+            <span data-lang="it" class="hidden">Siete adatti alle famiglie?</span>
             <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
           </button>
           <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
-            Of course! We have a kids’ menu and high chairs available. Delizia is a great place for families.
+            <span data-lang="en">Of course! We have a kids’ menu and high chairs available. Delizia is a great place for families.</span>
+            <span data-lang="fr" class="hidden">Bien sûr ! Nous avons un menu enfant et des chaises hautes. Delizia est idéale pour les familles.</span>
+            <span data-lang="sw" class="hidden">Bila shaka! Tuna menyu ya watoto na viti maalum. Delizia ni mahali pazuri kwa familia.</span>
+            <span data-lang="it" class="hidden">Certo! Abbiamo un menù per bambini e seggioloni disponibili. Delizia è perfetta per le famiglie.</span>
           </div>
         </div>
         <div>
           <button type="button" class="w-full text-left font-semibold text-red-700 flex justify-between items-center focus:outline-none faq-question">
-            Do you cater for events?
+            <span data-lang="en">Do you cater for events?</span>
+            <span data-lang="fr" class="hidden">Faites-vous du service traiteur pour des événements ?</span>
+            <span data-lang="sw" class="hidden">Je, mnafanya huduma ya upishi kwa matukio?</span>
+            <span data-lang="it" class="hidden">Fornite catering per eventi?</span>
             <span class="ml-2 transition-transform duration-200 faq-arrow">&#9660;</span>
           </button>
           <div class="faq-answer hidden mt-2 text-gray-700 text-sm md:text-base">
-            Yes, we provide catering for parties, corporate events, and special occasions. Please contact us for more details.
+            <span data-lang="en">Yes, we provide catering for parties, corporate events, and special occasions. Please contact us for more details.</span>
+            <span data-lang="fr" class="hidden">Oui, nous proposons un service traiteur pour les fêtes, événements d'entreprise et occasions spéciales. Contactez-nous pour plus d'informations.</span>
+            <span data-lang="sw" class="hidden">Ndiyo, tunatoa huduma ya upishi kwa sherehe, matukio ya kampuni na hafla maalum. Tafadhali wasiliana nasi kwa maelezo zaidi.</span>
+            <span data-lang="it" class="hidden">Sì, offriamo catering per feste, eventi aziendali e occasioni speciali. Contattaci per maggiori dettagli.</span>
           </div>
         </div>
       </div>
@@ -195,6 +376,26 @@
     </div>
     <p class="text-xs sm:text-sm md:text-base">&copy; 2025 Delizia Restaurant. All rights reserved.</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Language switcher logic
+    document.getElementById('lang-switcher').addEventListener('change', function() {
+      const lang = this.value;
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.classList.toggle('hidden', el.getAttribute('data-lang') !== lang);
+      });
+      // Update placeholders for inputs/textareas
+      document.querySelectorAll('input[placeholder][data-placeholder-en], textarea[placeholder][data-placeholder-en]').forEach(el => {
+        el.placeholder = el.getAttribute('data-placeholder-' + lang) || el.getAttribute('data-placeholder-en');
+      });
+    });
+    // Set default language to English and placeholders
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('hidden', el.getAttribute('data-lang') !== 'en');
+    });
+    document.querySelectorAll('input[placeholder][data-placeholder-en], textarea[placeholder][data-placeholder-en]').forEach(el => {
+      el.placeholder = el.getAttribute('data-placeholder-en');
+    });
+  </script>
 </body>
 </html>
