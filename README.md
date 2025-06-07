@@ -33,8 +33,7 @@ A modern, responsive website for **Delizia Restaurant** built with HTML, Tailwin
   ├── index.html         # Main website file (with multi-language support)
   ├── js/
   │   └── script.js      # JavaScript for carousel, contact form, FAQ accordion, and language switching
-  ├── css/
-  │   └── style.css      # (Optional) Custom styles
+
   └── README.md          # This file
 ```
 
