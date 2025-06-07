@@ -33,70 +33,58 @@
         </button>
       </div>
       <!-- Desktop nav -->
-<ul id="navbar"
-  class="w-full hidden md:flex flex-col md:flex-row items-center justify-evenly font-semibold text-base mt-4 md:mt-0
-         bg-red-700 md:bg-transparent rounded-lg md:rounded-none shadow md:shadow-none p-4 md:p-0 z-50">
-        <li><a href="#home" class="hover:text-yellow-300 transition" data-lang="en">Home</a>
-            <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="fr">Accueil</a>
-            <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="sw">Nyumbani</a>
-            <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="it">Home</a>
+      <ul id="navbar"
+        class="w-full hidden md:flex flex-row items-center font-semibold text-base mt-4 md:mt-0
+               bg-red-700 md:bg-transparent rounded-lg md:rounded-none shadow md:shadow-none p-4 md:p-0 z-50">
+        <li class="flex-1 flex justify-end">
+          <a href="#home" class="hover:text-yellow-300 transition" data-lang="en">Home</a>
+          <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="fr">Accueil</a>
+          <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="sw">Nyumbani</a>
+          <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="it">Home</a>
         </li>
-        <li><a href="#menu" class="hover:text-yellow-300 transition" data-lang="en">Menu</a>
-            <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="fr">Menu</a>
-            <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="sw">Menyu</a>
-            <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="it">Menù</a>
+        <li class="flex-1 flex justify-end">
+          <a href="#menu" class="hover:text-yellow-300 transition" data-lang="en">Menu</a>
+          <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="fr">Menu</a>
+          <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="sw">Menyu</a>
+          <a href="#menu" class="hover:text-yellow-300 transition hidden" data-lang="it">Menù</a>
         </li>
-        <li><a href="#about" class="hover:text-yellow-300 transition" data-lang="en">About</a>
-            <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="fr">À propos</a>
-            <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="sw">Kuhusu</a>
-            <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="it">Chi siamo</a>
+        <li class="flex-1 flex justify-end">
+          <a href="#about" class="hover:text-yellow-300 transition" data-lang="en">About</a>
+          <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="fr">À propos</a>
+          <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="sw">Kuhusu</a>
+          <a href="#about" class="hover:text-yellow-300 transition hidden" data-lang="it">Chi siamo</a>
         </li>
-        <li><a href="#contact" class="hover:text-yellow-300 transition" data-lang="en">Contact</a>
-            <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="fr">Contact</a>
-            <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="sw">Mawasiliano</a>
-            <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="it">Contatti</a>
+        <li class="flex-none flex justify-center">
+          <h1 class="font-extrabold text-yellow-300 text-2xl md:text-3xl m-0 p-0 leading-none" style="line-height:1;">
+            <span data-lang="en">Delizia</span>
+            <span data-lang="fr" class="hidden">Delizia</span>
+            <span data-lang="sw" class="hidden">Delizia</span>
+            <span data-lang="it" class="hidden">Delizia</span>
+          </h1>
         </li>
-        <li class="md:hidden"><a href="#faq" class="hover:text-yellow-300 transition" data-lang="en">FAQ</a>
-            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="fr">FAQ</a>
-            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="sw">Maswali</a>
-            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="it">FAQ</a>
+        <li class="flex-1 flex justify-start">
+          <a href="#contact" class="hover:text-yellow-300 transition" data-lang="en">Contact</a>
+          <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="fr">Contact</a>
+          <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="sw">Mawasiliano</a>
+          <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="it">Contatti</a>
         </li>
-        <li class="md:hidden"><a href="#partners" class="hover:text-yellow-300 transition" data-lang="en">Partners</a>
-            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="fr">Partenaires</a>
-            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="sw">Washirika</a>
-            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="it">Partner</a>
+        <li class="flex-1 flex justify-start">
+          <a href="#faq" class="hover:text-yellow-300 transition" data-lang="en">FAQ</a>
+          <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="fr">FAQ</a>
+          <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="sw">Maswali</a>
+          <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="it">FAQ</a>
         </li>
-        <li class="md:hidden"><a href="#testimonials" class="hover:text-yellow-300 transition" data-lang="en">Testimonials</a>
-            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="fr">Témoignages</a>
-            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="sw">Ushuhuda</a>
-            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="it">Testimonianze</a>
+        <li class="flex-1 flex justify-start">
+          <a href="#partners" class="hover:text-yellow-300 transition" data-lang="en">Partners</a>
+          <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="fr">Partenaires</a>
+          <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="sw">Washirika</a>
+          <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="it">Partner</a>
         </li>
-      </ul>
-      <!-- Desktop Delizia logo in center -->
-      <div class="hidden md:block mx-8">
-        <h1 class="font-extrabold text-yellow-300 text-2xl md:text-3xl m-0 p-0 leading-none" style="line-height:1;">
-          <span data-lang="en">Delizia</span>
-          <span data-lang="fr" class="hidden">Delizia</span>
-          <span data-lang="sw" class="hidden">Delizia</span>
-          <span data-lang="it" class="hidden">Delizia</span>
-        </h1>
-      </div>
-      <!-- Desktop-only nav items -->
-      <ul class="hidden md:flex flex-row space-x-4 font-semibold text-base ml-auto">
-        <li><a href="#faq" class="hover:text-yellow-300 transition" data-lang="en">FAQ</a>
-            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="fr">FAQ</a>
-            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="sw">Maswali</a>
-            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="it">FAQ</a>
-        </li>
-        <li><a href="#partners" class="hover:text-yellow-300 transition" data-lang="en">Partners</a>
-            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="fr">Partenaires</a>
-            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="sw">Washirika</a>
-            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="it">Partner</a>
-        </li>
-        <li><a href="#testimonials" class="hover:text-yellow-300 transition" data-lang="en">Testimonials</a>
-            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="fr">Témoignages</a>
-            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="sw">Ushuhuda</a>
-            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="it">Testimonianze</a>
+        <li class="flex-1 flex justify-start">
+          <a href="#testimonials" class="hover:text-yellow-300 transition" data-lang="en">Testimonials</a>
+          <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="fr">Témoignages</a>
+          <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="sw">Ushuhuda</a>
+          <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="it">Testimonianze</a>
         </li>
       </ul>
     </nav>
@@ -308,8 +296,9 @@
           <span class="ml-1">123 Main Street, Cityville, Country</span>
         </div>
       </div>
-      <form class="space-y-4">
+      <form action="https://formspree.io/f/xnnvjwop" method="POST" class="space-y-4">
         <input type="text"
+          name="name"
           placeholder="Your Name"
           data-placeholder-en="Your Name"
           data-placeholder-fr="Votre nom"
@@ -318,6 +307,7 @@
           required
           class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
         <input type="email"
+          name="email"
           placeholder="Your Email"
           data-placeholder-en="Your Email"
           data-placeholder-fr="Votre e-mail"
@@ -326,6 +316,7 @@
           required
           class="w-full border border-gray-300 rounded px-3 py-2 sm:px-4 sm:py-2 focus:outline-none focus:ring-2 focus:ring-red-400 text-sm md:text-base">
         <textarea
+          name="message"
           placeholder="Your Message"
           data-placeholder-en="Your Message"
           data-placeholder-fr="Votre message"
@@ -452,26 +443,69 @@
       </a>
     </div>
     <div class="mb-2">
-      <a href="#terms" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2">Terms of Use</a>
+      <a href="#terms" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2" data-lang="en">Terms of Use</a>
+      <a href="#terms" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2 hidden" data-lang="fr">Conditions d'utilisation</a>
+      <a href="#terms" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2 hidden" data-lang="sw">Masharti ya Matumizi</a>
+      <a href="#terms" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2 hidden" data-lang="it">Termini di utilizzo</a>
       <span class="text-yellow-300">|</span>
-      <a href="#privacy" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2">Privacy Policy</a>
+      <a href="#privacy" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2" data-lang="en">Privacy Policy</a>
+      <a href="#privacy" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2 hidden" data-lang="fr">Politique de confidentialité</a>
+      <a href="#privacy" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2 hidden" data-lang="sw">Sera ya Faragha</a>
+      <a href="#privacy" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2 hidden" data-lang="it">Informativa sulla privacy</a>
     </div>
-    <p class="text-xs sm:text-sm md:text-base">&copy; 2025 Delizia Restaurant. All rights reserved.</p>
+    <p class="text-xs sm:text-sm md:text-base">
+      <span data-lang="en">&copy; 2025 Delizia Restaurant. All rights reserved.</span>
+      <span data-lang="fr" class="hidden">&copy; 2025 Restaurant Delizia. Tous droits réservés.</span>
+      <span data-lang="sw" class="hidden">&copy; 2025 Delizia Restaurant. Haki zote zimehifadhiwa.</span>
+      <span data-lang="it" class="hidden">&copy; 2025 Ristorante Delizia. Tutti i diritti riservati.</span>
+    </p>
   </footer>
 
   <!-- Terms of Use Modal/Section -->
   <section id="terms" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8 hidden">
-    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">Terms of Use</h2>
+    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
+      <span data-lang="en">Terms of Use</span>
+      <span data-lang="fr" class="hidden">Conditions d'utilisation</span>
+      <span data-lang="sw" class="hidden">Masharti ya Matumizi</span>
+      <span data-lang="it" class="hidden">Termini di utilizzo</span>
+    </h2>
     <p class="text-gray-700 text-sm md:text-base">
-      These Terms of Use govern your use of the Delizia Restaurant website. By accessing or using our site, you agree to comply with these terms. Content is for informational purposes only and may be updated at any time. Unauthorized use or duplication is prohibited.
+      <span data-lang="en">
+        These Terms of Use govern your use of the Delizia Restaurant website. By accessing or using our site, you agree to comply with these terms. Content is for informational purposes only and may be updated at any time. Unauthorized use or duplication is prohibited.
+      </span>
+      <span data-lang="fr" class="hidden">
+        Ces conditions d'utilisation régissent votre utilisation du site Delizia Restaurant. En accédant ou en utilisant notre site, vous acceptez de respecter ces conditions. Le contenu est fourni à titre informatif et peut être mis à jour à tout moment. Toute utilisation ou duplication non autorisée est interdite.
+      </span>
+      <span data-lang="sw" class="hidden">
+        Masharti haya ya Matumizi yanasimamia matumizi yako ya tovuti ya Delizia Restaurant. Kwa kufikia au kutumia tovuti yetu, unakubali kufuata masharti haya. Maudhui ni kwa madhumuni ya taarifa tu na yanaweza kubadilishwa wakati wowote. Matumizi au kunakili bila ruhusa ni marufuku.
+      </span>
+      <span data-lang="it" class="hidden">
+        Questi Termini di utilizzo regolano l'uso del sito Delizia Restaurant. Accedendo o utilizzando il nostro sito, accetti di rispettare questi termini. I contenuti sono solo a scopo informativo e possono essere aggiornati in qualsiasi momento. L'uso o la duplicazione non autorizzati sono vietati.
+      </span>
     </p>
   </section>
 
   <!-- Privacy Policy Modal/Section -->
   <section id="privacy" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8 hidden">
-    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">Privacy Policy</h2>
+    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
+      <span data-lang="en">Privacy Policy</span>
+      <span data-lang="fr" class="hidden">Politique de confidentialité</span>
+      <span data-lang="sw" class="hidden">Sera ya Faragha</span>
+      <span data-lang="it" class="hidden">Informativa sulla privacy</span>
+    </h2>
     <p class="text-gray-700 text-sm md:text-base">
-      We respect your privacy. Any personal information submitted through our website will be handled in accordance with applicable laws and used only to respond to your inquiries or improve our services. We do not share your information with third parties without your consent.
+      <span data-lang="en">
+        We respect your privacy. Any personal information submitted through our website will be handled in accordance with applicable laws and used only to respond to your inquiries or improve our services. We do not share your information with third parties without your consent.
+      </span>
+      <span data-lang="fr" class="hidden">
+        Nous respectons votre vie privée. Toute information personnelle soumise via notre site sera traitée conformément aux lois applicables et utilisée uniquement pour répondre à vos demandes ou améliorer nos services. Nous ne partageons pas vos informations avec des tiers sans votre consentement.
+      </span>
+      <span data-lang="sw" class="hidden">
+        Tunaheshimu faragha yako. Taarifa zozote binafsi utakazotuma kupitia tovuti yetu zitatunzwa kulingana na sheria husika na zitatumika tu kujibu maswali yako au kuboresha huduma zetu. Hatutashiriki taarifa zako na mtu mwingine bila idhini yako.
+      </span>
+      <span data-lang="it" class="hidden">
+        Rispettiamo la tua privacy. Qualsiasi informazione personale inviata tramite il nostro sito sarà trattata in conformità con le leggi vigenti e utilizzata solo per rispondere alle tue richieste o migliorare i nostri servizi. Non condividiamo le tue informazioni con terzi senza il tuo consenso.
+      </span>
     </p>
   </section>
 
