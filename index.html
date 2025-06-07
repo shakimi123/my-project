@@ -18,13 +18,7 @@
   </div>
   <header class="bg-red-700 text-white shadow">
     <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-8 lg:px-16">
-      <div class="text-2xl font-bold tracking-wide mb-2 md:mb-0">
-        <span data-lang="en">Delizia</span>
-        <span data-lang="fr" class="hidden">Delizia</span>
-        <span data-lang="sw" class="hidden">Delizia</span>
-        <span data-lang="it" class="hidden">Delizia</span>
-      </div>
-      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 font-semibold items-center">
+      <ul class="w-full flex flex-col md:flex-row md:justify-between items-center space-y-2 md:space-y-0">
         <li><a href="#home" class="hover:text-yellow-300 transition" data-lang="en">Home</a>
             <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="fr">Accueil</a>
             <a href="#home" class="hover:text-yellow-300 transition hidden" data-lang="sw">Nyumbani</a>
@@ -44,6 +38,30 @@
             <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="fr">Contact</a>
             <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="sw">Mawasiliano</a>
             <a href="#contact" class="hover:text-yellow-300 transition hidden" data-lang="it">Contatti</a>
+        </li>
+        <!-- Delizia nav item as h1 inserted here -->
+        <li>
+          <h1 class="font-extrabold text-yellow-300 text-2xl md:text-3xl m-0 p-0 leading-none" style="line-height:1;">
+            <span data-lang="en">Delizia</span>
+            <span data-lang="fr" class="hidden">Delizia</span>
+            <span data-lang="sw" class="hidden">Delizia</span>
+            <span data-lang="it" class="hidden">Delizia</span>
+          </h1>
+        </li>
+        <li><a href="#faq" class="hover:text-yellow-300 transition" data-lang="en">FAQ</a>
+            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="fr">FAQ</a>
+            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="sw">Maswali</a>
+            <a href="#faq" class="hover:text-yellow-300 transition hidden" data-lang="it">FAQ</a>
+        </li>
+        <li><a href="#partners" class="hover:text-yellow-300 transition" data-lang="en">Partners</a>
+            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="fr">Partenaires</a>
+            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="sw">Washirika</a>
+            <a href="#partners" class="hover:text-yellow-300 transition hidden" data-lang="it">Partner</a>
+        </li>
+        <li><a href="#testimonials" class="hover:text-yellow-300 transition" data-lang="en">Testimonials</a>
+            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="fr">Témoignages</a>
+            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="sw">Ushuhuda</a>
+            <a href="#testimonials" class="hover:text-yellow-300 transition hidden" data-lang="it">Testimonianze</a>
         </li>
       </ul>
     </nav>
@@ -231,6 +249,30 @@
         <span data-lang="sw" class="hidden">Mawasiliano</span>
         <span data-lang="it" class="hidden">Contatti</span>
       </h2>
+      <!-- Contact Details -->
+      <div class="mb-6 text-gray-700 text-sm md:text-base space-y-2">
+        <div>
+          <span class="font-semibold" data-lang="en">Phone:</span>
+          <span class="font-semibold hidden" data-lang="fr">Téléphone :</span>
+          <span class="font-semibold hidden" data-lang="sw">Simu:</span>
+          <span class="font-semibold hidden" data-lang="it">Telefono:</span>
+          <a href="tel:+1234567890" class="text-red-700 hover:underline ml-1">+1 (234) 567-890</a>
+        </div>
+        <div>
+          <span class="font-semibold" data-lang="en">Email:</span>
+          <span class="font-semibold hidden" data-lang="fr">E-mail :</span>
+          <span class="font-semibold hidden" data-lang="sw">Barua pepe:</span>
+          <span class="font-semibold hidden" data-lang="it">Email:</span>
+          <a href="mailto:info@delizia.com" class="text-red-700 hover:underline ml-1">info@delizia.com</a>
+        </div>
+        <div>
+          <span class="font-semibold" data-lang="en">Address:</span>
+          <span class="font-semibold hidden" data-lang="fr">Adresse :</span>
+          <span class="font-semibold hidden" data-lang="sw">Anwani:</span>
+          <span class="font-semibold hidden" data-lang="it">Indirizzo:</span>
+          <span class="ml-1">123 Main Street, Cityville, Country</span>
+        </div>
+      </div>
       <form class="space-y-4">
         <input type="text"
           placeholder="Your Name"
@@ -374,8 +416,30 @@
         </svg>
       </a>
     </div>
+    <div class="mb-2">
+      <a href="#terms" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2">Terms of Use</a>
+      <span class="text-yellow-300">|</span>
+      <a href="#privacy" class="underline hover:text-yellow-300 text-xs sm:text-sm md:text-base mx-2">Privacy Policy</a>
+    </div>
     <p class="text-xs sm:text-sm md:text-base">&copy; 2025 Delizia Restaurant. All rights reserved.</p>
   </footer>
+
+  <!-- Terms of Use Modal/Section -->
+  <section id="terms" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8 hidden">
+    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">Terms of Use</h2>
+    <p class="text-gray-700 text-sm md:text-base">
+      These Terms of Use govern your use of the Delizia Restaurant website. By accessing or using our site, you agree to comply with these terms. Content is for informational purposes only and may be updated at any time. Unauthorized use or duplication is prohibited.
+    </p>
+  </section>
+
+  <!-- Privacy Policy Modal/Section -->
+  <section id="privacy" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8 hidden">
+    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">Privacy Policy</h2>
+    <p class="text-gray-700 text-sm md:text-base">
+      We respect your privacy. Any personal information submitted through our website will be handled in accordance with applicable laws and used only to respond to your inquiries or improve our services. We do not share your information with third parties without your consent.
+    </p>
+  </section>
+
   <script src="js/script.js"></script>
   <script>
     // Language switcher logic
@@ -395,6 +459,19 @@
     });
     document.querySelectorAll('input[placeholder][data-placeholder-en], textarea[placeholder][data-placeholder-en]').forEach(el => {
       el.placeholder = el.getAttribute('data-placeholder-en');
+    });
+
+    // Show Terms/Privacy section on click and scroll to it
+    document.querySelectorAll('a[href="#terms"], a[href="#privacy"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('#terms, #privacy').forEach(sec => sec.classList.add('hidden'));
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.classList.remove('hidden');
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     });
   </script>
 </body>
