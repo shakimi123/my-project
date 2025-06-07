@@ -11,16 +11,16 @@ A modern, responsive website for **Delizia Restaurant** built with HTML, Tailwin
 - **About Section:** Brief story about the restaurant.
 - **Partners Section:** Restaurant partner logos with grayscale and enlarge-on-hover effects.
 - **Testimonials:** Carousel for customer feedback.
-- **Contact Form:** Users can send a message (shows a thank you alert on submit).
+- **Contact Section:** Contact details (phone, email, address) and a contact form.
 - **FAQ Section:** Click-to-expand answers for frequently asked questions.
-- **Footer:** Social media icons and copyright.
+- **Footer:** Social media icons, Terms of Use, Privacy Policy, and copyright.
 - **Multi-language Support:** Switch between English, French, Swahili, and Italian using the language selector at the top right. All main content, menu, forms, and FAQ are translated.
+- **Terms of Use & Privacy Policy:** Linked in the footer, with modal/section content.
 
 ## How to Use
 
 1. **Clone or Download** this repository.
 2. Open `index.html` in your browser to view the site.
-
 3. All styling is handled by Tailwind CDN and optional custom CSS in `css/style.css`.
 4. To customize menu items, images, or text, edit `index.html`.
 5. The contact form uses a simple JavaScript alert for demonstration.
@@ -33,6 +33,8 @@ A modern, responsive website for **Delizia Restaurant** built with HTML, Tailwin
   ├── index.html         # Main website file (with multi-language support)
   ├── js/
   │   └── script.js      # JavaScript for carousel, contact form, FAQ accordion, and language switching
+  ├── css/
+  │   └── style.css      # (Optional) Custom styles
   └── README.md          # This file
 ```
 
@@ -54,8 +56,10 @@ You can easily deploy this site for free using [GitHub Pages](https://pages.gith
 - **Menu Items:** Change images, names, and prices in the Menu section.
 - **Partners:** Replace logo URLs with your own partners.
 - **Colors & Fonts:** Adjust Tailwind classes in the HTML or add custom styles in `css/style.css`.
+- **Contact Details:** Update phone, email, and address in the Contact section.
 - **Contact Form:** Integrate with a backend or service for real submissions.
 - **FAQ:** Edit questions and answers in the FAQ section.
+- **Terms & Privacy:** Edit the content in the Terms of Use and Privacy Policy sections.
 - **Translations:** Edit or add translations by updating the `<span data-lang="...">...</span>` elements in `index.html`.
 
 ## Credits
