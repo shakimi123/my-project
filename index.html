@@ -7,7 +7,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
-  <!-- Language Selector -->
   <div class="flex justify-end p-4">
     <select id="lang-switcher" class="border rounded px-2 py-1">
       <option value="en">English</option>
@@ -18,7 +17,6 @@
   </div>
   <header class="bg-red-700 text-white shadow">
     <nav class="max-w-7xl mx-auto py-4 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center w-full">
-      <!-- Mobile menu button -->
       <div class="w-full flex justify-between items-center md:hidden">
         <h1 class="font-extrabold text-yellow-300 text-2xl m-0 p-0 leading-none">
           <span data-lang="en">Delizia</span>
@@ -32,7 +30,6 @@
           </svg>
         </button>
       </div>
-      <!-- Desktop nav -->
       <ul id="navbar"
         class="w-full hidden md:flex flex-row items-center font-semibold text-base mt-4 md:mt-0
                bg-red-700 md:bg-transparent rounded-lg md:rounded-none shadow md:shadow-none p-4 md:p-0 z-50">
@@ -90,27 +87,22 @@
     </nav>
   </header>
   <main>
-    <!-- Home Section -->
-    <section id="home" class="py-12 md:py-20 lg:py-28 bg-gradient-to-br from-yellow-50 to-white text-center relative overflow-hidden group">
-      <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80"
-             alt="Restaurant background"
-             class="w-full h-full object-cover opacity-30 group-hover:opacity-60 transition-opacity duration-300" />
-      </div>
-      <div class="max-w-xl md:max-w-2xl mx-auto px-4 relative z-10">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-red-800">
+    <section id="hero" class="relative bg-cover bg-center min-h-[400px] flex items-center justify-center rounded-lg shadow mb-8"
+      style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80');">
+      <div class="bg-black bg-opacity-50 rounded-lg p-8 text-center max-w-2xl mx-auto">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-yellow-300 mb-4">
           <span data-lang="en">Welcome to Delizia</span>
           <span data-lang="fr" class="hidden">Bienvenue chez Delizia</span>
           <span data-lang="sw" class="hidden">Karibu Delizia</span>
           <span data-lang="it" class="hidden">Benvenuti da Delizia</span>
         </h1>
-        <p class="text-base sm:text-lg md:text-xl mb-8 text-gray-700">
-          <span data-lang="en">Authentic Italian cuisine, made with love and the freshest ingredients.</span>
-          <span data-lang="fr" class="hidden">Cuisine italienne authentique, préparée avec amour et les ingrédients les plus frais.</span>
-          <span data-lang="sw" class="hidden">Chakula halisi cha Italia, kimeandaliwa kwa upendo na viungo safi kabisa.</span>
-          <span data-lang="it" class="hidden">Cucina italiana autentica, preparata con amore e ingredienti freschissimi.</span>
+        <p class="text-white text-lg md:text-2xl mb-6">
+          <span data-lang="en">Authentic Italian cuisine in the heart of the city.</span>
+          <span data-lang="fr" class="hidden">Cuisine italienne authentique au cœur de la ville.</span>
+          <span data-lang="sw" class="hidden">Chakula halisi cha Italia katikati ya jiji.</span>
+          <span data-lang="it" class="hidden">Cucina italiana autentica nel cuore della città.</span>
         </p>
-        <a href="#menu" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full shadow transition text-base sm:text-lg">
+        <a href="#menu" class="bg-red-700 text-white font-bold py-3 px-8 rounded shadow transition">
           <span data-lang="en">View Menu</span>
           <span data-lang="fr" class="hidden">Voir le menu</span>
           <span data-lang="sw" class="hidden">Angalia Menyu</span>
@@ -118,78 +110,112 @@
         </a>
       </div>
     </section>
-    <!-- Menu Section -->
     <section id="menu" class="max-w-6xl mx-auto my-8 md:my-16 lg:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4 md:mb-6 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-red-700 mb-8 text-center">
         <span data-lang="en">Our Menu</span>
         <span data-lang="fr" class="hidden">Notre Menu</span>
         <span data-lang="sw" class="hidden">Menyu Yetu</span>
         <span data-lang="it" class="hidden">Il Nostro Menù</span>
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center relative overflow-hidden group">
-          <img src="https://simplyhomecooked.com/wp-content/uploads/2023/04/Margherita-Pizza-3.jpg"
-               alt="Margherita Pizza"
-               class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
-          <div class="relative z-10">
-            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
-              <span data-lang="en">Margherita Pizza</span>
-              <span data-lang="fr" class="hidden">Pizza Margherita</span>
-              <span data-lang="sw" class="hidden">Pizza Margherita</span>
-              <span data-lang="it" class="hidden">Pizza Margherita</span>
-            </h3>
-            <p class="text-gray-700 mb-2 text-sm md:text-base">
-              <span data-lang="en">Classic pizza with tomato, mozzarella, and basil.</span>
-              <span data-lang="fr" class="hidden">Pizza classique avec tomate, mozzarella et basilic.</span>
-              <span data-lang="sw" class="hidden">Pizza ya asili yenye nyanya, mozzarella na basil.</span>
-              <span data-lang="it" class="hidden">Pizza classica con pomodoro, mozzarella e basilico.</span>
-            </p>
-            <span class="font-bold text-red-700 text-base md:text-lg">$12</span>
-          </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center">
+          <img src="https://anitalianinmykitchen.com/wp-content/uploads/2019/02/Classic-Carbonara-sq-480x270.jpg" alt="Spaghetti Carbonara" class="w-full h-40 object-cover rounded-lg mb-2" />
+          <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+            <span data-lang="en">Spaghetti Carbonara</span>
+            <span data-lang="fr" class="hidden">Spaghetti Carbonara</span>
+            <span data-lang="sw" class="hidden">Spaghetti Carbonara</span>
+            <span data-lang="it" class="hidden">Spaghetti alla Carbonara</span>
+          </h3>
+          <p class="text-gray-700 mb-2 text-sm md:text-base">
+            <span data-lang="en">Pasta with pancetta, egg, and parmesan.</span>
+            <span data-lang="fr" class="hidden">Pâtes avec pancetta, œuf et parmesan.</span>
+            <span data-lang="sw" class="hidden">Tambi na pancetta, mayai, na parmesan.</span>
+            <span data-lang="it" class="hidden">Pasta con pancetta, uovo e parmigiano.</span>
+          </p>
+          <span class="font-bold text-red-700 text-base md:text-lg">$14</span>
         </div>
-        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center relative overflow-hidden group">
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
-               alt="Spaghetti Carbonara"
-               class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
-          <div class="relative z-10">
-            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
-              <span data-lang="en">Spaghetti Carbonara</span>
-              <span data-lang="fr" class="hidden">Spaghetti Carbonara</span>
-              <span data-lang="sw" class="hidden">Spaghetti Carbonara</span>
-              <span data-lang="it" class="hidden">Spaghetti alla Carbonara</span>
-            </h3>
-            <p class="text-gray-700 mb-2 text-sm md:text-base">
-              <span data-lang="en">Pasta with pancetta, egg, and parmesan.</span>
-              <span data-lang="fr" class="hidden">Pâtes avec pancetta, œuf et parmesan.</span>
-              <span data-lang="sw" class="hidden">Tambi na pancetta, mayai, na parmesan.</span>
-              <span data-lang="it" class="hidden">Pasta con pancetta, uovo e parmigiano.</span>
-            </p>
-            <span class="font-bold text-red-700 text-base md:text-lg">$14</span>
-          </div>
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP0HbRY0SsECXq3XHqjXUBw3CqK1VfE5PX1w&s" alt="Margherita Pizza" class="w-full h-40 object-cover rounded-lg mb-2" />
+          <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+            <span data-lang="en">Margherita Pizza</span>
+            <span data-lang="fr" class="hidden">Pizza Margherita</span>
+            <span data-lang="sw" class="hidden">Pizza Margherita</span>
+            <span data-lang="it" class="hidden">Pizza Margherita</span>
+          </h3>
+          <p class="text-gray-700 mb-2 text-sm md:text-base">
+            <span data-lang="en">Classic pizza with tomato, mozzarella, and basil.</span>
+            <span data-lang="fr" class="hidden">Pizza classique avec tomate, mozzarella et basilic.</span>
+            <span data-lang="sw" class="hidden">Pizza ya jadi na nyanya, mozzarella na basil.</span>
+            <span data-lang="it" class="hidden">Pizza classica con pomodoro, mozzarella e basilico.</span>
+          </p>
+          <span class="font-bold text-red-700 text-base md:text-lg">$12</span>
         </div>
-        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center relative overflow-hidden group">
-          <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80"
-               alt="Tiramisu"
-               class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300 rounded-lg pointer-events-none" />
-          <div class="relative z-10">
-            <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
-              <span data-lang="en">Tiramisu</span>
-              <span data-lang="fr" class="hidden">Tiramisu</span>
-              <span data-lang="sw" class="hidden">Tiramisu</span>
-              <span data-lang="it" class="hidden">Tiramisù</span>
-            </h3>
-            <p class="text-gray-700 mb-2 text-sm md:text-base">
-              <span data-lang="en">Traditional Italian coffee-flavored dessert.</span>
-              <span data-lang="fr" class="hidden">Dessert italien traditionnel au café.</span>
-              <span data-lang="sw" class="hidden">Kitindamlo cha jadi cha Italia chenye ladha ya kahawa.</span>
-              <span data-lang="it" class="hidden">Dessert tradizionale italiano al gusto di caffè.</span>
-            </p>
-            <span class="font-bold text-red-700 text-base md:text-lg">$7</span>
-          </div>
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center">
+          <img src="https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/Tiramisu.jpg?fit=1344%2C768&ssl=1" alt="Tiramisu" class="w-full h-40 object-cover rounded-lg mb-2" />
+          <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+            <span data-lang="en">Tiramisu</span>
+            <span data-lang="fr" class="hidden">Tiramisu</span>
+            <span data-lang="sw" class="hidden">Tiramisu</span>
+            <span data-lang="it" class="hidden">Tiramisù</span>
+          </h3>
+          <p class="text-gray-700 mb-2 text-sm md:text-base">
+            <span data-lang="en">Classic Italian dessert with coffee and mascarpone.</span>
+            <span data-lang="fr" class="hidden">Dessert italien classique au café et mascarpone.</span>
+            <span data-lang="sw" class="hidden">Kitindamlo cha Italia chenye kahawa na mascarpone.</span>
+            <span data-lang="it" class="hidden">Dolce italiano classico con caffè e mascarpone.</span>
+          </p>
+          <span class="font-bold text-red-700 text-base md:text-lg">$8</span>
+        </div>
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center">
+          <img src="https://ncoliveoil.com/cdn/shop/articles/iStock-481765835_1254x.jpg?v=1574271323" alt="Bruschetta" class="w-full h-40 object-cover rounded-lg mb-2" />
+          <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+            <span data-lang="en">Bruschetta</span>
+            <span data-lang="fr" class="hidden">Bruschetta</span>
+            <span data-lang="sw" class="hidden">Bruschetta</span>
+            <span data-lang="it" class="hidden">Bruschetta</span>
+          </h3>
+          <p class="text-gray-700 mb-2 text-sm md:text-base">
+            <span data-lang="en">Toasted bread with tomatoes, basil, and olive oil.</span>
+            <span data-lang="fr" class="hidden">Pain grillé avec tomates, basilic et huile d'olive.</span>
+            <span data-lang="sw" class="hidden">Mkate uliokaangwa na nyanya, basil na mafuta ya zeituni.</span>
+            <span data-lang="it" class="hidden">Pane tostato con pomodori, basilico e olio d'oliva.</span>
+          </p>
+          <span class="font-bold text-red-700 text-base md:text-lg">$6</span>
+        </div>
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center">
+          <img src="https://www.joyousapron.com/wp-content/uploads/2020/12/Lasagna-with-Be%CC%81chamel-Sauce-Pic-12-500x375.jpg" alt="Lasagna" class="w-full h-40 object-cover rounded-lg mb-2" />
+          <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+            <span data-lang="en">Lasagna</span>
+            <span data-lang="fr" class="hidden">Lasagne</span>
+            <span data-lang="sw" class="hidden">Lasagna</span>
+            <span data-lang="it" class="hidden">Lasagna</span>
+          </h3>
+          <p class="text-gray-700 mb-2 text-sm md:text-base">
+            <span data-lang="en">Layers of pasta with meat sauce and béchamel.</span>
+            <span data-lang="fr" class="hidden">Couches de pâtes avec sauce à la viande et béchamel.</span>
+            <span data-lang="sw" class="hidden">Tabaka za tambi na mchuzi wa nyama na béchamel.</span>
+            <span data-lang="it" class="hidden">Strati di pasta con ragù di carne e besciamella.</span>
+          </p>
+          <span class="font-bold text-red-700 text-base md:text-lg">$16</span>
+        </div>
+        <div class="bg-yellow-50 rounded-lg p-4 sm:p-6 shadow text-center">
+          <img src="https://www.afarmgirlsdabbles.com/wp-content/uploads/2019/07/Italian-chopped-salad-afarmgirlsdabbles-01h.jpg" alt="Italian Salad" class="w-full h-40 object-cover rounded-lg mb-2" />
+          <h3 class="text-lg md:text-xl font-semibold text-red-700 mb-2">
+            <span data-lang="en">Italian Salad</span>
+            <span data-lang="fr" class="hidden">Salade Italienne</span>
+            <span data-lang="sw" class="hidden">Saladi ya Italia</span>
+            <span data-lang="it" class="hidden">Insalata Italiana</span>
+          </h3>
+          <p class="text-gray-700 mb-2 text-sm md:text-base">
+            <span data-lang="en">Mixed greens with olives, tomatoes, and mozzarella.</span>
+            <span data-lang="fr" class="hidden">Mélange de salades avec olives, tomates et mozzarella.</span>
+            <span data-lang="sw" class="hidden">Mchanganyiko wa majani na mizeituni, nyanya na mozzarella.</span>
+            <span data-lang="it" class="hidden">Insalata mista con olive, pomodori e mozzarella.</span>
+          </p>
+          <span class="font-bold text-red-700 text-base md:text-lg">$10</span>
         </div>
       </div>
     </section>
-    <!-- About Section -->
     <section id="about" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
       <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
         <span data-lang="en">About Us</span>
@@ -204,7 +230,6 @@
         <span data-lang="it" class="hidden">Delizia è un ristorante italiano a conduzione familiare nel cuore della città. I nostri chef utilizzano ricette tramandate da generazioni, garantendo piatti autentici e tradizionali. Unisciti a noi per un’esperienza accogliente e scopri il vero sapore dell’Italia!</span>
       </p>
     </section>
-    <!-- Partnership Logos Section -->
     <section id="partners" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
       <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">
         <span data-lang="en">Our Partners</span>
@@ -225,7 +250,6 @@
              class="h-12 w-auto grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-150" />
       </div>
     </section>
-    <!-- Testimonial Carousel Section -->
     <section id="testimonials" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
       <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">
         <span data-lang="en">Testimonials</span>
@@ -264,7 +288,6 @@
         </div>
       </div>
     </section>
-    <!-- Contact Section -->
     <section id="contact" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
       <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
         <span data-lang="en">Contact</span>
@@ -272,7 +295,6 @@
         <span data-lang="sw" class="hidden">Mawasiliano</span>
         <span data-lang="it" class="hidden">Contatti</span>
       </h2>
-      <!-- Contact Details -->
       <div class="mb-6 text-gray-700 text-sm md:text-base space-y-2">
         <div>
           <span class="font-semibold" data-lang="en">Phone:</span>
@@ -332,7 +354,6 @@
         </button>
       </form>
     </section>
-    <!-- FAQ Section -->
     <section id="faq" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8">
       <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 text-center">
         <span data-lang="en">Frequently Asked Questions</span>
@@ -460,8 +481,6 @@
       <span data-lang="it" class="hidden">&copy; 2025 Ristorante Delizia. Tutti i diritti riservati.</span>
     </p>
   </footer>
-
-  <!-- Terms of Use Modal/Section -->
   <section id="terms" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8 hidden">
     <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
       <span data-lang="en">Terms of Use</span>
@@ -484,8 +503,6 @@
       </span>
     </p>
   </section>
-
-  <!-- Privacy Policy Modal/Section -->
   <section id="privacy" class="max-w-3xl mx-auto my-12 md:my-20 bg-white rounded-lg shadow p-4 sm:p-6 md:p-8 hidden">
     <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-4">
       <span data-lang="en">Privacy Policy</span>
@@ -510,47 +527,6 @@
   </section>
 
   <script src="js/script.js"></script>
-  <script>
-    // Language switcher logic
-    document.getElementById('lang-switcher').addEventListener('change', function() {
-      const lang = this.value;
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        el.classList.toggle('hidden', el.getAttribute('data-lang') !== lang);
-      });
-      // Update placeholders for inputs/textareas
-      document.querySelectorAll('input[placeholder][data-placeholder-en], textarea[placeholder][data-placeholder-en]').forEach(el => {
-        el.placeholder = el.getAttribute('data-placeholder-' + lang) || el.getAttribute('data-placeholder-en');
-      });
-    });
-    // Set default language to English and placeholders
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.classList.toggle('hidden', el.getAttribute('data-lang') !== 'en');
-    });
-    document.querySelectorAll('input[placeholder][data-placeholder-en], textarea[placeholder][data-placeholder-en]').forEach(el => {
-      el.placeholder = el.getAttribute('data-placeholder-en');
-    });
-
-    // Show Terms/Privacy section on click and scroll to it
-    document.querySelectorAll('a[href="#terms"], a[href="#privacy"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelectorAll('#terms, #privacy').forEach(sec => sec.classList.add('hidden'));
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.classList.remove('hidden');
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navbar = document.getElementById('navbar');
-    if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener('click', () => {
-        navbar.classList.toggle('hidden');
-      });
-    }
-  </script>
-</body>
+</main>
+  </body>
 </html>

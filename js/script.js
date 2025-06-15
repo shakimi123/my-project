@@ -66,4 +66,67 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-});
+
+  // Menu Carousel (if you use it)
+  const carousel = document.getElementById('menu-carousel');
+  if (carousel) {
+    const items = carousel.children;
+    const totalItems = items.length;
+    const itemsPerSlide = 3;
+    let currentSlide = 0;
+
+    function updateCarousel() {
+      const slideWidth = items[0].offsetWidth;
+      carousel.style.transform = `translateX(-${currentSlide * slideWidth * itemsPerSlide}px)`;
+    }
+
+    const prevBtn = document.getElementById('menu-prev');
+    const nextBtn = document.getElementById('menu-next');
+    if (prevBtn && nextBtn) {
+      prevBtn.onclick = function () {
+        if (currentSlide > 0) {
+          currentSlide--;
+          updateCarousel();
+        }
+      };
+      nextBtn.onclick = function () {
+        if ((currentSlide + 1) * itemsPerSlide < totalItems) {
+          currentSlide++;
+          updateCarousel();
+        }
+      };
+    }
+
+    window.addEventListener('resize', updateCarousel);
+    updateCarousel();
+  }
+
+  // Language Switcher
+  const langSwitcher = document.getElementById('lang-switcher');
+  if (langSwitcher) {
+    langSwitcher.addEventListener('change', function () {
+      const lang = langSwitcher.value;
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.classList.toggle('hidden', el.getAttribute('data-lang') !== lang);
+      });
+      document.querySelectorAll('[data-placeholder-en]').forEach(el => {
+        el.placeholder = el.getAttribute('data-placeholder-' + lang) || el.getAttribute('data-placeholder-en');
+      });
+    });
+  }
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const answer = btn.parentElement.querySelector('.faq-answer');
+      if (answer) {
+        answer.classList.toggle('hidden');
+        const arrow = btn.querySelector('.faq-arrow');
+                if (arrow) {
+                  arrow.classList.toggle('rotate-180');
+                }
+              }
+            });
+          });
+        
+        });
