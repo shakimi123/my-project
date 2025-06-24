@@ -115,4 +115,33 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  // Terms & Privacy Modal/Section Show/Hide
+  function showSection(sectionId) {
+    document.querySelectorAll('#terms, #privacy').forEach(sec => sec.classList.add('hidden'));
+    const section = document.getElementById(sectionId);
+    if (section) section.classList.remove('hidden');
+    window.scrollTo({ top: section.offsetTop - 40, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('a[href="#terms"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      showSection('terms');
+    });
+  });
+
+  document.querySelectorAll('a[href="#privacy"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      showSection('privacy');
+    });
+  });
+
+  // Optional: Hide sections when clicking outside or pressing Escape
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('#terms, #privacy').forEach(sec => sec.classList.add('hidden'));
+    }
+  });
 });
