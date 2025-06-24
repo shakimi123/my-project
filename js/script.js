@@ -37,37 +37,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000);
   }
 
-  // Contact form submit handler
-  const contactForm = document.querySelector('#contact form');
+  // Contact form submit handler (Formspree or local)
+  const contactForm = document.querySelector('form[action*="formspree"], #contact form');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      // Optionally, you can add validation here
-      alert('Thank you for contacting us! We have received your message.');
-      contactForm.reset();
+      if (!contactForm.action.includes('formspree')) {
+        e.preventDefault();
+        alert('Thank you for contacting us! We have received your message.');
+        contactForm.reset();
+      } else {
+        setTimeout(() => {
+          alert('Thank you for your message!');
+        }, 100);
+      }
     });
   }
 
-  // FAQ accordion logic
+  // FAQ accordion logic (only one open at a time)
   document.querySelectorAll('.faq-question').forEach((btn) => {
     btn.addEventListener('click', function () {
       const answer = this.nextElementSibling;
       const arrow = this.querySelector('.faq-arrow');
       const isOpen = !answer.classList.contains('hidden');
-
-      // Close all answers
       document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
       document.querySelectorAll('.faq-arrow').forEach(ar => ar.classList.remove('rotate-180'));
-
-      // Toggle current
       if (!isOpen) {
         answer.classList.remove('hidden');
-        arrow.classList.add('rotate-180');
+        if (arrow) arrow.classList.add('rotate-180');
       }
     });
   });
 
-  // Menu Carousel (if you use it)
+  // Menu Carousel (if present)
   const carousel = document.getElementById('menu-carousel');
   if (carousel) {
     const items = carousel.children;
@@ -114,19 +115,4 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-
-  // FAQ Accordion
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const answer = btn.parentElement.querySelector('.faq-answer');
-      if (answer) {
-        answer.classList.toggle('hidden');
-        const arrow = btn.querySelector('.faq-arrow');
-                if (arrow) {
-                  arrow.classList.toggle('rotate-180');
-                }
-              }
-            });
-          });
-        
-        });
+});
