@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Mobile menu toggle
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const navbar = document.getElementById('navbar');
+  if (mobileBtn && navbar) {
+    mobileBtn.addEventListener('click', function () {
+      navbar.classList.toggle('hidden');
+    });
+  }
+
   // Testimonial Carousel Logic
   const testimonials = document.querySelectorAll('.testimonial-item');
   const prevBtn = document.querySelector('.carousel-btn.prev');
